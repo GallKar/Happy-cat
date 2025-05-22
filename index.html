@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Happy Cat</title>
+    <link rel="stylesheet" href="static/styles/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <div class="container">
+                <img src="static/images/png2.png" alt="Картинка 1" class="image1">
+                <img src="static/images/png3.png" alt="Картинка 2" class="image3">
+            </div>
+            <span class="logo-text">Happy Cat</span> 
+        </div>
+    
+        <nav class="navigation">
+            <a href="index3.html">Все породы</a>
+            <a href="index2.html">Особенности</a>
+            <a href="index2.html">История</a>
+        </nav>
+        <div class="header-down">
+            <div class="quote">но только тем, кто умеет</div>
+            <div class="quote2">слушать</div>
+            <div class="green-eyes">ЗЕЛЕНЫЕ</div>
+            <div class="green-eyes2">ГЛАЗА</div>
+            <div class="green-eyes3">ГОВОРЯТ</div>
+        </div>
+    </div>
+
+    <main>
+        <section class="gray-section"> 
+            <div class="gray-container"> 
+                <p class="gray-text">Happy Cat - это уникальный ресурс, который объединяет всех любителей кошек. Здесь вы найдете информацию о различных породах котов, их особенностях, характере и уходе.</p>
+            </div>
+        </section>
+
+    </main>
+
+ 
+    <div class="button-container">
+        <a href="#" class="red-button">Все породы</a>
+        <a href="#" class="white-button">
+            <i class="fas fa-search"></i>
+            <span id="search-button-text">Найти</span>
+          </a>
+        
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const searchButton = document.querySelector('.white-button'); 
+              let searchInput = null;
+        
+              searchButton.addEventListener('click', function(event) {
+                event.preventDefault(); 
+        
+                if (!searchInput) {
+                 
+                  searchInput = document.createElement('input');
+                  searchInput.type = 'text';
+                  searchInput.id = 'search-input';
+                  searchInput.placeholder = 'Введите слово для поиска';
+        
+                  searchButton.innerHTML = '';
+        
+
+                  searchButton.appendChild(searchInput);
+        
+
+                  searchInput.focus();
+        
+                } else {
+                  
+                  alert("Начинаем поиск..."); 
+                }
+              });
+            });
+          </script>
+    </div>
+    
+    <div class="cards-container">
+        <div class="cards">
+            <a href="index2.html" class="card-link">  <!-- Замените sphinx.html на нужный URL -->
+                <div class="card">
+                    <div class="card-image">
+                        <img class="card-img" src="static/images/png4.png" alt="Сфинкс">
+                    </div>
+                    <div class="card-text1">Сфинкс</div>
+                    <div class="card-text">Отличный новый друг для всей семьи, очень ласковые и умные</div>
+                </div>
+            </a>
+        
+            <a href="index2.html" class="card-link"> <!-- Замените vislouhaya.html на нужный URL -->
+                <div class="card">
+                    <div class="card-image">
+                        <img class="card-img" src="static/images/png5.png" alt="Вислоухая кошка">
+                    </div>
+                    <div class="card-text1">Вислоухая кошка</div>
+                    <div class="card-text">Прекрасная подруга на дождливые холодные времена</div>
+                </div>
+            </a>
+        
+            <a href="index2.html" class="card-link"> <!-- Замените selkirk.html на нужный URL -->
+                <div class="card">
+                    <div class="card-image">
+                        <img class="card-img" src="static/images/png6.png" alt="Селкирк рекс">
+                    </div>
+                    <div class="card-text1">Селкирк рекс</div>
+                    <div class="card-text">Лучший вариант для тех, кто хочет завести дружелюбного, спокойного друга</div>
+                </div>
+            </a>
+        </div>
+
+        </div>
+    
+        <div class="card-nav">
+            <button class="nav-button prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="nav-button next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Секция "Есть вопрос? Задавайте!" (подвал) -->
+<section class="contact-section">
+    <div class="container">
+        <div class="left-section">
+            <h3>ЕСТЬ ВОПРОС? ЗАДАВАЙТЕ!</h1>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="name">Введите имя</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Введите email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="phone">Введите телефон</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+
+                <div class="input-group">
+                    <label for="topic">Тема вопроса</label>
+                    <select id="topic" name="topic">
+                        <option value="poroda">Порода</option>
+                        <option value="istoriya">История</option>
+                        <option value="vopros">Вопрос</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group message-group">
+                <label for="message">Введите сообщение</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <div class="privacy-policy">
+                <label>
+                    <input type="checkbox" name="agree_data"> Я согласен на обработку моих персональных данных
+                </label>
+                <label>
+                    <input type="checkbox" name="agree_policy"> Я согласен с политикой конфиденциальности
+                </label>
+            </div>
+
+            <div class="footer">
+                <div class="back-to-top">
+                    <img src=""
+                        alt="Стрелка вверх">
+                    <a href="#" style="color: #fff; text-decoration: none;">Наверх</a>
+                </div>
+                <div class="contact-info">
+                    <p>Телефон: <a href="tel:+79686582376"
+                            style="color: #fff; text-decoration: none;">+7 968 658-23-76</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <img src="static/images/png7.png"
+                alt="Restaurant Image">
+                 <button class="submit-button"></button>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

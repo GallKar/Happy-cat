@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Породы кошек</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; 
+        }
+
+        .gallery-item {
+            width: calc(33.33% - 20px); 
+            margin-bottom: 20px;
+            text-align: center;
+            box-sizing: border-box; 
+            padding: 10px;
+        }
+
+        .gallery-item a {
+            display: block; 
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            aspect-ratio: 1/1; 
+            object-fit: cover; 
+        }
+
+        /* Пагинация */
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            display: inline-block;
+            padding: 8px 16px;
+            text-decoration: none;
+            color: #333;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 0 4px;
+            border-radius: 4px;
+        }
+
+        .pagination a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        /*Адаптация для мобильных устройств*/
+        @media (max-width: 768px) {
+            .gallery {
+                justify-content: center; /*Центрируем на маленьких экранах*/
+            }
+
+            .gallery-item {
+                width: calc(50% - 20px); /*2 в ряд на маленьких экранах*/
+            }
+        }
+
+        @media (max-width: 500px) {
+            .gallery-item {
+                width: 100%; /*1 в ряд на совсем маленьких экранах*/
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Породы кошек</h1>
+    </header>
+
+    <main>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="#">
+                    <img src="static/images/i.webp" alt="Порода 1">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#">
+                    <img src="static/images/i (1).webp" alt="Порода 2">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#">
+                    <img src="static/images/i (2).webp" alt="Порода 3">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#">
+                    <img src="static/images/i (3).webp" alt="Порода 4">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#">
+                    <img src="static/images/i (4).webp" alt="Порода 5">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#">
+                    <img src="static/images/i (5).webp" alt="Порода 6">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#">
+                    <img src="static/images/i (6).webp" alt="Порода 7">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#">
+                    <img src="static/images/i (7).webp" alt="Порода 8">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#">
+                    <img src="static/images/i (8).webp" alt="Порода 9">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#">
+                    <img src="" alt="Порода 10">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#">
+                    <img src="" alt="Порода 11">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#">
+                    <img src="" alt="Порода 12">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#">
+                    <img src="" alt="Порода 13">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#">
+                    <img src="" alt="Порода 14">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#">
+                    <img src="" alt="Порода 15">
+                </a>
+            </div>
+        </div>
+
+        <!-- Пагинация -->
+        <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+        </div>
+    </main>
+
+</body>
+
+</html>

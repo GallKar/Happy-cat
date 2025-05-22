@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Информация о породе</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      align-items: flex-start; 
+      max-width: 1200px; 
+      margin: 0 auto; 
+    }
+
+    .image-wrapper {
+      width: 50%; 
+      padding-right: 20px;
+      box-sizing: border-box; 
+    }
+
+    .image-wrapper img {
+      width: 100%; 
+      height: auto; 
+      display: block; 
+      border-radius: 8px; 
+    }
+
+    .text-content {
+      width: 50%; 
+      box-sizing: border-box; 
+      padding-left: 20px;
+    }
+
+    .text-content p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column; 
+      }
+
+      .image-wrapper, .text-content {
+        width: 100%; 
+        padding-left: 0; 
+        padding-right: 0;
+      }
+
+      .image-wrapper {
+        margin-bottom: 20px; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>История и Особенности</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="image-wrapper">
+        <img src="static/images/png5.png" alt="Вислоухая кошка">
+      </div>
+      <div class="text-content">
+        <p>Порода вислоухие кошки — это уникальная порода кошек, отличительной чертой которой являются их сложенные вперёд и вниз уши, что придает им милый и немного удивленный вид.  Эти кошки обладают спокойным и дружелюбным характером, что делает их отличными компаньонами для семей с детьми и другими домашними животными. Они также известны своей игривостью и любознательностью, что делает их интересными и забавными питомцами.</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,521 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    background: url(png1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; 
+        padding: 78px 177px;
+        position: relative;
+    }
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+    }
+    
+    .container {
+        position: relative;
+        width: 75px;
+        height: 75px;
+    }
+    
+    .image1 {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    
+    .image3 {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height:80%;
+    }
+    
+    .logo-text {
+        font-size: 36px;
+        font-weight: bold;
+        margin-left: 20px;
+        color: white;
+    }
+    
+    .navigation {
+        display: flex;
+        align-items: center; 
+    }
+    
+    .navigation a {
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+        margin-left: 35px;
+        margin-top: 20px;
+
+        transition: color 0.3s linear;
+    }
+
+    .navigation>a:hover {
+        color: red;
+
+    }
+    
+    .navigation a:first-child {
+        font-weight: bold;
+    }
+    
+    .navigation a:not(:first-child) {
+        font-weight: normal;
+    }
+
+    .header-down {
+        position: absolute; 
+        bottom: 20px; 
+        left: 177px; 
+        text-align: left; 
+    }
+    
+    .quote {
+        color: white;
+        font-size: 30px;
+        font-weight: 100;
+        display: block;
+        margin-bottom: 0;
+        margin-top: 0; 
+        font-weight: bold;
+    }
+    
+    .quote2 {
+        color: white;
+        font-size: 30px;
+        font-weight: 100;
+        display: block;
+        margin-bottom: 0;
+        margin-top:  0; 
+        font-weight: bold;
+    }
+    
+    .green-eyes {
+        color: green;
+        font-size: 96px;
+        font-weight: 1000;
+        display: block;
+        margin-bottom: 0;
+        margin-top: 0; 
+    }
+    
+    .green-eyes2 {
+        color: green;
+        font-size: 96px;
+        font-weight: 1000;
+        display: block;
+        margin-bottom: 0;
+        margin-top: 0; 
+    }
+    
+    .green-eyes3 {
+        color: green;
+        font-size: 96px;
+        font-weight: 1000;
+        display: block;
+        margin-bottom: 0;
+        margin-top: 0; 
+    }
+
+
+    .cards-container {
+        background-color: #333;
+    }
+
+    .gray-section {
+        background-color: black; 
+        padding: 50px 0; 
+    }
+    
+    .gray-container {
+        width: 742px; 
+        margin: 0 auto; 
+        text-align: center; 
+    }
+    
+    .gray-text {
+        color: white; 
+        font-size: 20px; 
+        line-height: 1.5; 
+    }
+
+
+    .button-container {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin-top: 20px; 
+    }
+    
+    .red-button, .white-button {
+        display: inline-block; 
+        padding: 10px 20px; 
+        border-radius: 25px; 
+        font-size: 16px; 
+        text-decoration: none; 
+        margin: 0 10px; 
+        cursor: pointer; 
+    }
+    
+    .red-button {
+        background-color: red;
+        color: white;
+        border: none; 
+    }
+    
+    .white-button {
+        background-color: white;
+        color: black;
+        border: 1px solid black; 
+    }
+    
+    .white-button i {
+        margin-right: 5px; 
+    }
+
+
+.cards-container {
+    background-color: #f0f0f0; 
+    padding: 20px 109px; 
+}
+
+.cards {
+    display: flex;
+    
+    gap: 43px; 
+}
+
+
+.card {
+    width: 363px;
+    height: 477px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center; 
+}
+
+
+.card-image {
+    padding: 48px 26px 0; 
+}
+
+.card-img {
+    width: 311px;
+    height: 274px;
+    border-radius: 8px; 
+}
+
+.card-text {
+    padding: 20px; 
+    font-size: 16px;
+    color: #333; 
+}
+
+.card-text1 {
+    font-weight: bold;
+}
+
+.card-nav {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 10px; 
+}
+
+.card-link {
+    text-decoration: none; /* Убирает подчеркивание ссылки */
+    color: inherit; /* Наследует цвет текста от родителя */
+    display: block; /* Делает ссылку блочным элементом, занимающим всю карточку */
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+  cursor: pointer; /*меняем курсор на указатель*/
+}
+
+.nav-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    outline: none; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav-button:hover {
+    background-color: #ddd;
+}
+
+.nav-button i {
+    color: #666;
+    font-size: 1.2em;
+}
+
+
+
+/* CSS для секции "Есть вопрос? Задавайте!" (подвал) */
+
+.contact-section {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0; /* Увеличил вертикальный отступ */
+    margin-top: 30px;
+    width: 100%;
+    height: 800px; /* Задаем высоту */
+    display: flex;
+    flex-direction: column; /* Организуем контент вертикально */
+    justify-content: flex-start; /* Выравнивание по верхней линии */
+    align-items: center; /* Центрирование по горизонтали */
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%; /* Теперь контейнер занимает 100% доступной ширины */
+    margin: 0 auto;
+    padding: 0 20px; /* Добавил отступы по бокам */
+    box-sizing: border-box; /* Важно: учитывает padding в общей ширине */
+}
+
+.left-section {
+    width: 50%;
+    padding-left: 211px;
+    box-sizing: border-box;
+}
+
+.right-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Выравнивание элементов по верху */
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding-right: 40px;
+}
+
+.right-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Отступ для картинки */
+}
+
+.right-section .submit-button {
+    margin-top: 0; /* Убираем верхний отступ с кнопки */
+}
+
+.left-section h1 {
+    text-align: left;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.input-group {
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    color: #ccc; /* Более мягкий цвет для label */
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group select,
+.message-group textarea {
+    background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
+    border: none;
+    border-bottom: 1px solid #666; /* Более мягкий цвет для подчеркивания */
+    color: #fff;
+    width: 100%;
+    padding: 12px; /* Увеличил padding */
+    margin-bottom: 15px;
+    outline: none;
+    font-size: 1em;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.message-group textarea {
+    min-height: 150px; /* Увеличил высоту textarea */
+    resize: vertical;
+}
+
+.input-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z' fill='%23fff'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 20px;
+    padding-right: 30px;
+    /* Место для стрелки */
+}
+
+.privacy-policy {
+    margin-top: 30px;
+    font-size: 0.85em;
+    color: #ccc;
+    text-align: left;
+}
+
+.privacy-policy label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.privacy-policy input[type="checkbox"] {
+    margin-right: 8px;
+    /* Стиль для чекбоксов (можно добавить кастомные стили) */
+}
+
+.submit-button {
+    position: relative;
+    width: 70px; /* Увеличил размер кнопки */
+    height: 70px;
+    border-radius: 50%;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2em;
+    outline: none;
+    /* margin-top: 10px;  */
+    align-self: flex-end;
+    /* Выравнивание по правому краю */
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #c00;
+}
+
+.submit-button::after {
+    content: "→";
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    /* Разделительная линия */
+    text-align: left;
+    font-size: 0.9em;
+    color: #999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.back-to-top {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.back-to-top img {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.contact-info {
+    text-align: right;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 20px;
+        height: auto; /* Автоматическая высота */
+        align-items: stretch; /* Растягиваем контейнер на всю высоту */
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .left-section {
+        padding-top: 20px;
+    }
+
+    .right-section {
+        align-items: center;
+        /* выравнивание по центру  */
+        justify-content: flex-start; /* Сбрасываем выравнивание */
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    .input-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .right-section img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .contact-info {
+        text-align: left;
+        margin-top: 10px;
+    }
+}
